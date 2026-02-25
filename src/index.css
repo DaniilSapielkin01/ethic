@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(-45deg, #0093e9, #80d0c9, #0093e9, #00d4ff);
+  background-size: 400% 400%;
+  animation: gradient 7.5s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scrollbar styling */
+.contacts-list::-webkit-scrollbar {
+  width: 4px;
+}
+.contacts-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.contacts-list::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 2px;
+}
+
+/* Dial key press effect */
+.dial-key:active {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
