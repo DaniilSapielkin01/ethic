@@ -12,7 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(-45deg, #0093e9, #80d0c9, #0093e9, #00d4ff);
   background-size: 400% 400%;
-  animation: gradient 7.5s ease infinite;
+  animation: gradient 7s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +47,13 @@ body {
 .dial-key:active {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(0.95);
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

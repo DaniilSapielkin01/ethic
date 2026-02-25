@@ -25,9 +25,9 @@ export const DialPad = ({ digits, onAdd, onDelete }: DialPad) => (
           </span>
           <button
             onClick={onDelete}
-            className="absolute right-6 text-white opacity-80 hover:opacity-100 transition-opacity w-8 h-8"
+            className="absolute right-6 text-white opacity-80 hover:opacity-100 transition-opacity "
           >
-            <DeleteIcon />
+            <DeleteIcon width={21} />
           </button>
         </>
       )}
@@ -43,7 +43,13 @@ export const DialPad = ({ digits, onAdd, onDelete }: DialPad) => (
       {DIAL_KEYS.map(({ key, sub }) => (
         <ButtonPad value={key} onClick={onAdd}>
           <span className="text-white font-light text-[28px] leading-none">
-            {key === "*" ? <StarIcon /> : key === "#" ? <PoundIcon /> : key}
+            {key === "*" ? (
+              <StarIcon width={16} />
+            ) : key === "#" ? (
+              <PoundIcon width={16} />
+            ) : (
+              key
+            )}
           </span>
           {sub && (
             <span className="text-white uppercase text-[9px] opacity-75 mt-0.5 tracking-[0.2em]">
