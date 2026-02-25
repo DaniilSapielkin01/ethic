@@ -2,7 +2,7 @@ A contacts search application with a dial pad interface built with **React + Vit
 
 ## Setup & Running
 
-## ESLint Configuration
+#### ESLint Configuration
 
 The project uses ESLint with TypeScript support.
 
